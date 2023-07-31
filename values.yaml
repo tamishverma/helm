@@ -1,0 +1,19 @@
+appLabel: nextjs
+appPort: 3000
+nodePort: 30017
+appName: helmapp
+
+
+
+configmap: 
+   name: myconfig
+   data: 
+    custom_header: "my header for configmap"
+
+spec: 
+   replicas: 5
+
+image: 
+   name: nextjs
+   tag: latest
+

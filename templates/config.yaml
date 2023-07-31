@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: {{ .Values.configmap.name }}
+data: 
+  username: tverma
+  custom_header: {{ .Values.configmap.data.custom_header }}
